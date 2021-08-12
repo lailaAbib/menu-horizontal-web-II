@@ -1,59 +1,204 @@
-.navMenu{
-    background-color: #6d6d6d;
-    height: 70vh;
+.menu{ 
+    height: 40px;
+    border: 1px solid rgb(214, 46, 16);
+    padding-bottom: 8px;
+    font-size: 16px;
+    background-color: wheat;
 }
 
-.navMenu::after{
+.navmenu::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.navMenu ul{
+.navmenu ul {
     list-style: none;
-    text-align: left;
+    text-align: right;
     display: flex;
-    justify-content: space-between;
 }
 
-.navMenu ul li a:hover{
+.navmenu ul li {
+    display: inline;
+}
+
+.navmenu ul li a{
+    padding-left: 2vw;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+}
+
+.navmenu ul li a:hover {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     color: blue;
 }
 
-#inicio{
-    height: 70vh;
-    background-color: greenyellow;
+#inicio, #cursos, #contatos, #parceiros, #missao, 
+#sobre {
     border: 1px solid black;
+    text-align: center;
 }
 
-#cursos{
-    height: 90vh;
+#inicio {
+    height: 40vh;
+    background-color: greenyellow;    
+}
+
+#cursos {
+    height: 45vh;
     background-color: hotpink;
-    border: 1px solid lawngreen;
 }
 
-#contatos{
+#contatos {
     height: 60vh;
     background-color: orange;
-    border: 1px solid rgb(88, 94, 7);
 }
 
-#parceiros{
+#parceiros {
     height: 40vh;
     background-color: thistle;
-    border: 1px solid rgb(7, 255, 181);
 }
 
-#missao{
-    height: 90vh;
-    background-color: teal;
-    border: 1px solid yellow;
+#missao {
+    height: 70vh;
+    background-color: yellow;
 }
 
-#sobre{
+#sobre {
     height: 10vh;
-    background-color: seashell;
-    border: 1px solid red;
+    background-color: red;
 }
+
+/* 
+    Configuração ancoras
+*/
+.irTopo, .irinicio, .ircursos, .ircontatos, .irparceiros, .irmissao, .irsobre {
+    font-size: 12px;
+    padding: 1vh;
+    transition: 0.2s;
+    position: fixed;
+    right: 1vh;
+    text-decoration: none;
+    width: 90px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.irTopo{
+    bottom: 14vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.irTopo:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.irinicio{
+    bottom: 82vh;
+    color: green;
+    background-color: bisque;
+}
+
+.irinicio:hover{
+    background-color: greenyellow;
+}
+
+
+.ircursos{
+    bottom: 78vh;
+    color: black;
+    background-color: cyan;
+}
+
+.ircursos:hover{
+    background-color: hotpink;
+}
+
+.ircontatos{
+    bottom: 74vh;
+    color: white;
+    background-color: darkblue;
+}
+
+.ircontatos:hover{
+    background-color: orange;
+}
+
+.irparceiros{
+    bottom: 70vh;
+    color: darkred;
+    background-color: gray;
+}
+
+.irparceiros:hover{
+    background-color: thistle;
+}
+
+.irmissao{
+    bottom: 66vh;
+    color: indigo;
+    background-color: green;
+}
+
+.irmissao:hover{
+    background-color: yellow;
+}
+
+.irsobre{
+    bottom: 62vh;
+    color: indigo;
+    background-color: salmon;
+}
+
+.irsobre:hover{
+    background-color: red;
+}
+
+/*
+    Configurações do aside do lado esquedo
+*/
+
+.aside a{
+    position: fixed;
+    left: -5vw;
+    transition: 0.2s;
+    padding: 2vh;
+    width: 5vw;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffff;
+    border-radius: 0 15px 15px 0;
+}
+
+.aside a:hover{
+    left: 0;
+}
+
+#inicio2{
+    top: 16vh;
+    background-color: blue;
+}
+#cursos2{
+    top: 30vh;
+    background-color: red;
+}
+
+#contatos2{
+    top: 40vh;
+    background-color: black;
+}
+#parceiros2{
+    top: 50vh;
+    background-color: cyan;
+}
+#missao2{
+    top: 60vh;
+    background-color: greenyellow;
+}
+#sobre2{
+    top: 70vh;
+    background-color: violet;
+}
+
